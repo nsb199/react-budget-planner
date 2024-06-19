@@ -1,0 +1,196 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #678bb6, #9eb0d6);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  margin: 20px auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  
+}
+
+/* Header */
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Alerts */
+.alert {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Form Control */
+.form-control {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #678bb6;
+  outline: none;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #678bb6;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #556a90;
+  transform: scale(1.05);
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Adjust padding to control the size of the red background */
+}
+
+
+.btn-danger:hover {
+  background-color: #c82333;
+  transform: scale(1.1);
+}
+
+
+.btn-danger i {
+  font-size: 2.5rem; /* Increase font size of the X */
+}
+
+/* List Group */
+.list-group {
+  list-style: none;
+  padding: 0;
+  width: 90%;
+ 
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.list-group-item:hover {
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Expense Item */
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.expense-item span {
+  flex: 1;
+  text-align: left;
+  padding: 0 10px;
+  color: #333;
+}
+
+.expense-item .btn-danger {
+  margin-left: 10px;
+}
+
+/* Additional Styling for better look and feel */
+.add-expense-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 1.5rem;
+}
+
+.add-expense-form input {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.add-expense-form input:focus {
+  border-color: #678bb6;
+  outline: none;
+}
+
+.add-expense-form .btn {
+  flex-shrink: 0;
+  min-width: 100px;
+}
+
+.expenses-section {
+  margin-top: 2rem;
+}
+
+.expenses-section h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.expenses-section .expense-item {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.expenses-section .expense-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
